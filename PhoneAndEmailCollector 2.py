@@ -14,10 +14,9 @@ phoneRegex = re.compile(r'''
 emailRegex = re.compile(r'''
 # some.+_-thing@some.+_-.com.vn or .co.uk
 
-(^[a-zA-Z0-9_.+-]+   # the name
-@                    # the @ symbol
-[a-zA-Z0-9-]+        # the domain before dot
-\.[a-zA-Z0-9-.]+$)   # the domain after dot
+[a-zA-Z0-9_.+-]+        # the name
+@                       # the @ symbol
+[a-zA-Z0-9_.+-]+        # the domain
 
 ''', re.VERBOSE)
 
